@@ -24,6 +24,9 @@ struct Plan: Identifiable {
     let sendAllowance: Int
     let monthlyFee: Double
     let annuallyFee: Double
+    var storageCapacityInTB: Double {
+        Double(storageCapacity) / 1000.0
+    }
 }
 
 extension Plan: Hashable {
