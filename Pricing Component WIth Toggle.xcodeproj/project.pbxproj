@@ -19,8 +19,8 @@
 		90D4F1B5282B8FB5003B7048 /* PricingComponentWithToggleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingComponentWithToggleApp.swift; sourceTree = "<group>"; };
 		90D4F1B6282B8FB5003B7048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90D4F1B7282B8FB6003B7048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		90D4F1BC282B8FB6003B7048 /* PricingComponentWithToggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PricingComponentWithToggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		90D4F1C2282B8FB6003B7048 /* PricingComponentWithToggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PricingComponentWithToggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D4F1BC282B8FB6003B7048 /* Pricing Component WIth Toggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pricing Component WIth Toggle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D4F1C2282B8FB6003B7048 /* Pricing Component WIth Toggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pricing Component WIth Toggle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D4F1C4282B8FB6003B7048 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,9 +54,9 @@
 		90D4F1B4282B8FB5003B7048 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				90D4F1B5282B8FB5003B7048 /* PricingComponentWithToggleApp.swift */,
-				90D4F1B6282B8FB5003B7048 /* ContentView.swift */,
-				90D4F1B7282B8FB6003B7048 /* Assets.xcassets */,
+				90D4F1D5282B8FD7003B7048 /* Models */,
+				90D4F1D4282B8FD1003B7048 /* Views */,
+				90D4F1D3282B8FCA003B7048 /* App */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -64,8 +64,8 @@
 		90D4F1BD282B8FB6003B7048 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				90D4F1BC282B8FB6003B7048 /* PricingComponentWithToggle.app */,
-				90D4F1C2282B8FB6003B7048 /* PricingComponentWithToggle.app */,
+				90D4F1BC282B8FB6003B7048 /* Pricing Component WIth Toggle.app */,
+				90D4F1C2282B8FB6003B7048 /* Pricing Component WIth Toggle.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,12 +78,36 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		90D4F1D3282B8FCA003B7048 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				90D4F1B5282B8FB5003B7048 /* PricingComponentWithToggleApp.swift */,
+				90D4F1B7282B8FB6003B7048 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		90D4F1D4282B8FD1003B7048 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90D4F1B6282B8FB5003B7048 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		90D4F1D5282B8FD7003B7048 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		90D4F1BB282B8FB6003B7048 /* PricingComponentWithToggle (iOS) */ = {
+		90D4F1BB282B8FB6003B7048 /* Pricing Component WIth Toggle (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90D4F1CD282B8FB6003B7048 /* Build configuration list for PBXNativeTarget "PricingComponentWithToggle (iOS)" */;
+			buildConfigurationList = 90D4F1CD282B8FB6003B7048 /* Build configuration list for PBXNativeTarget "Pricing Component WIth Toggle (iOS)" */;
 			buildPhases = (
 				90D4F1B8282B8FB6003B7048 /* Sources */,
 				90D4F1B9282B8FB6003B7048 /* Frameworks */,
@@ -93,14 +117,14 @@
 			);
 			dependencies = (
 			);
-			name = "PricingComponentWithToggle (iOS)";
+			name = "Pricing Component WIth Toggle (iOS)";
 			productName = "PricingComponentWithToggle (iOS)";
-			productReference = 90D4F1BC282B8FB6003B7048 /* PricingComponentWithToggle.app */;
+			productReference = 90D4F1BC282B8FB6003B7048 /* Pricing Component WIth Toggle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		90D4F1C1282B8FB6003B7048 /* PricingComponentWithToggle (macOS) */ = {
+		90D4F1C1282B8FB6003B7048 /* Pricing Component WIth Toggle (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 90D4F1D0282B8FB6003B7048 /* Build configuration list for PBXNativeTarget "PricingComponentWithToggle (macOS)" */;
+			buildConfigurationList = 90D4F1D0282B8FB6003B7048 /* Build configuration list for PBXNativeTarget "Pricing Component WIth Toggle (macOS)" */;
 			buildPhases = (
 				90D4F1BE282B8FB6003B7048 /* Sources */,
 				90D4F1BF282B8FB6003B7048 /* Frameworks */,
@@ -110,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = "PricingComponentWithToggle (macOS)";
+			name = "Pricing Component WIth Toggle (macOS)";
 			productName = "PricingComponentWithToggle (macOS)";
-			productReference = 90D4F1C2282B8FB6003B7048 /* PricingComponentWithToggle.app */;
+			productReference = 90D4F1C2282B8FB6003B7048 /* Pricing Component WIth Toggle.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 90D4F1B3282B8FB5003B7048 /* Build configuration list for PBXProject "PricingComponentWithToggle" */;
+			buildConfigurationList = 90D4F1B3282B8FB5003B7048 /* Build configuration list for PBXProject "Pricing Component WIth Toggle" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,8 +170,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				90D4F1BB282B8FB6003B7048 /* PricingComponentWithToggle (iOS) */,
-				90D4F1C1282B8FB6003B7048 /* PricingComponentWithToggle (macOS) */,
+				90D4F1BB282B8FB6003B7048 /* Pricing Component WIth Toggle (iOS) */,
+				90D4F1C1282B8FB6003B7048 /* Pricing Component WIth Toggle (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +267,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,6 +321,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -324,7 +352,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.PricingComponentWithToggle;
-				PRODUCT_NAME = PricingComponentWithToggle;
+				PRODUCT_NAME = "Pricing Component WIth Toggle";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -354,7 +382,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.PricingComponentWithToggle;
-				PRODUCT_NAME = PricingComponentWithToggle;
+				PRODUCT_NAME = "Pricing Component WIth Toggle";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -384,7 +412,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.PricingComponentWithToggle;
-				PRODUCT_NAME = PricingComponentWithToggle;
+				PRODUCT_NAME = "Pricing Component WIth Toggle";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -412,7 +440,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jinwook.kim.PricingComponentWithToggle;
-				PRODUCT_NAME = PricingComponentWithToggle;
+				PRODUCT_NAME = "Pricing Component WIth Toggle";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,7 +450,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		90D4F1B3282B8FB5003B7048 /* Build configuration list for PBXProject "PricingComponentWithToggle" */ = {
+		90D4F1B3282B8FB5003B7048 /* Build configuration list for PBXProject "Pricing Component WIth Toggle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90D4F1CB282B8FB6003B7048 /* Debug */,
@@ -431,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90D4F1CD282B8FB6003B7048 /* Build configuration list for PBXNativeTarget "PricingComponentWithToggle (iOS)" */ = {
+		90D4F1CD282B8FB6003B7048 /* Build configuration list for PBXNativeTarget "Pricing Component WIth Toggle (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90D4F1CE282B8FB6003B7048 /* Debug */,
@@ -440,7 +468,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		90D4F1D0282B8FB6003B7048 /* Build configuration list for PBXNativeTarget "PricingComponentWithToggle (macOS)" */ = {
+		90D4F1D0282B8FB6003B7048 /* Build configuration list for PBXNativeTarget "Pricing Component WIth Toggle (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				90D4F1D1282B8FB6003B7048 /* Debug */,
