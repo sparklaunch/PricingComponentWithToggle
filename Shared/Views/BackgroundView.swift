@@ -16,6 +16,7 @@ struct BackgroundView: View {
                 .scaledToFit()
                 .scaleEffect(x: 0.5, y: 0.5, anchor: .topTrailing)
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

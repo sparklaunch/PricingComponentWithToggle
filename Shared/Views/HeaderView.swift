@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @EnvironmentObject private var globalState: GlobalState
     @State private var isMonthly = false
     var body: some View {
         VStack {
@@ -19,8 +20,14 @@ struct HeaderView: View {
                     .font(.title3.bold())
                     .foregroundColor(Color("BodyColor"))
                 Toggle(isOn: $isMonthly) {
+
                 }
                 .labelsHidden()
+                .onChange(of: isMonthly) { isMonthly in
+                    withAnimation {
+                        globalState.feeTerm = isMonthly ? .monthly : .annually
+                    }
+                }
                 Text("Monthly")
                     .font(.title3.bold())
                     .foregroundColor(Color("BodyColor"))
