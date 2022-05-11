@@ -15,6 +15,7 @@
 		90D4F1CA282B8FB6003B7048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90D4F1B7282B8FB6003B7048 /* Assets.xcassets */; };
 		90D4F1D7282B920E003B7048 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4F1D6282B920E003B7048 /* Plan.swift */; };
 		90D4F1D9282B96A6003B7048 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4F1D8282B96A6003B7048 /* BackgroundView.swift */; };
+		90D4F1DB282B97AB003B7048 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4F1DA282B97AB003B7048 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		90D4F1C4282B8FB6003B7048 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		90D4F1D6282B920E003B7048 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
 		90D4F1D8282B96A6003B7048 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		90D4F1DA282B97AB003B7048 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				90D4F1B6282B8FB5003B7048 /* ContentView.swift */,
 				90D4F1D8282B96A6003B7048 /* BackgroundView.swift */,
+				90D4F1DA282B97AB003B7048 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90D4F1DB282B97AB003B7048 /* HeaderView.swift in Sources */,
 				90D4F1C7282B8FB6003B7048 /* ContentView.swift in Sources */,
 				90D4F1C5282B8FB6003B7048 /* PricingComponentWithToggleApp.swift in Sources */,
 				90D4F1D9282B96A6003B7048 /* BackgroundView.swift in Sources */,

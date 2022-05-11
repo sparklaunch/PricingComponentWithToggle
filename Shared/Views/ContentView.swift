@@ -11,6 +11,14 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             BackgroundView()
+            ScrollView {
+                VStack {
+                    HeaderView()
+                }
+            }
+            .onAppear {
+                UIScrollView.appearance().bounces = false
+            }
         }
     }
 }
