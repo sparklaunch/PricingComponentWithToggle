@@ -42,5 +42,6 @@ struct HeaderView_Previews: PreviewProvider {
         HeaderView()
             .background(Color("BackgroundColor"))
             .previewLayout(.sizeThatFits)
+            .environmentObject(GlobalState())
     }
 }

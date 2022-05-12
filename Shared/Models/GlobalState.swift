@@ -7,11 +7,13 @@
 
 import Foundation
 
+// MARK: FeeTerm enum.
 enum FeeTerm {
     case annually
     case monthly
 }
 
+// MARK: GlobalState class.
 class GlobalState: ObservableObject {
     @Published var feeTerm: FeeTerm = .annually
 }

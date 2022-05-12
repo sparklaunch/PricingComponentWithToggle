@@ -17,6 +17,7 @@
 		90D4F1D9282B96A6003B7048 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4F1D8282B96A6003B7048 /* BackgroundView.swift */; };
 		90D4F1DB282B97AB003B7048 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4F1DA282B97AB003B7048 /* HeaderView.swift */; };
 		90D4F1DD282B9955003B7048 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4F1DC282B9955003B7048 /* GlobalState.swift */; };
+		90D4F1DF282B9BF4003B7048 /* PlanItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D4F1DE282B9BF4003B7048 /* PlanItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		90D4F1D8282B96A6003B7048 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		90D4F1DA282B97AB003B7048 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		90D4F1DC282B9955003B7048 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
+		90D4F1DE282B9BF4003B7048 /* PlanItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				90D4F1B6282B8FB5003B7048 /* ContentView.swift */,
 				90D4F1D8282B96A6003B7048 /* BackgroundView.swift */,
 				90D4F1DA282B97AB003B7048 /* HeaderView.swift */,
+				90D4F1DE282B9BF4003B7048 /* PlanItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				90D4F1DD282B9955003B7048 /* GlobalState.swift in Sources */,
 				90D4F1C5282B8FB6003B7048 /* PricingComponentWithToggleApp.swift in Sources */,
 				90D4F1D9282B96A6003B7048 /* BackgroundView.swift in Sources */,
+				90D4F1DF282B9BF4003B7048 /* PlanItemView.swift in Sources */,
 				90D4F1D7282B920E003B7048 /* Plan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

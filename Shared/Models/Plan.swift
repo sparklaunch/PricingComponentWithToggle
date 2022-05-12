@@ -8,7 +8,6 @@
 import Foundation
 
 // MARK: PlanType enum.
-
 enum PlanType: String, CaseIterable {
     case basic = "Basic"
     case professional = "Professional"
@@ -16,7 +15,6 @@ enum PlanType: String, CaseIterable {
 }
 
 // MARK: Plan struct.
-
 struct Plan: Identifiable {
     let id: UUID = .init()
     let storageCapacity: Int
@@ -27,6 +25,13 @@ struct Plan: Identifiable {
     var storageCapacityInTB: Double {
         Double(storageCapacity) / 1000.0
     }
+    var storageLabel: String {
+        if storageCapacity >= 1000 {
+            return "\(storageCapacityInTB) TB"
+        } else {
+            return "\(storageCapacity) GB"
+        }
+    }
 }
 
 extension Plan: Hashable {
@@ -36,7 +41,6 @@ extension Plan: Hashable {
 }
 
 // MARK: PlanStorage class.
-
 class PlanStorage: ObservableObject {
     @Published var plans: [PlanType: Plan] = [
         .basic: .init(storageCapacity: 500, maxNumOfUsers: 2, sendAllowance: 3, monthlyFee: 19.99, annuallyFee: 199.99),
