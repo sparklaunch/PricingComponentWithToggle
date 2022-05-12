@@ -27,7 +27,10 @@ struct Plan: Identifiable {
     }
     var storageLabel: String {
         if storageCapacity >= 1000 {
-            return "\(storageCapacityInTB) TB"
+            if String(storageCapacityInTB) != String(storageCapacityInTB.rounded(.down)) {
+                return "\(storageCapacityInTB) TB"
+            }
+            return "\(Int(storageCapacityInTB)) TB"
         } else {
             return "\(storageCapacity) GB"
         }
