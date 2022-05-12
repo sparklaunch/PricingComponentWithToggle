@@ -16,4 +16,5 @@ enum FeeTerm {
 // MARK: GlobalState class.
 class GlobalState: ObservableObject {
     @Published var feeTerm: FeeTerm = .annually
+    @Published var featuredPlanType: PlanType = .professional
 }

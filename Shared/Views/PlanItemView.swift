@@ -19,59 +19,70 @@ struct PlanItemView: View {
             return plan.monthlyFee
         }
     }
+    var isFeatured: Bool {
+        globalState.featuredPlanType == planType
+    }
     var body: some View {
         ZStack {
-            Color.white
+            if isFeatured {
+                LinearGradient(colors: [.init("LeadingGradientColor"), .init("TrailingGradientColor")], startPoint: .topLeading, endPoint: .bottomTrailing)
+            } else {
+                Color.white
+            }
             VStack {
                 VStack {
                     Text(planType.rawValue)
                         .font(.title.bold())
-                        .foregroundColor(Color("TitleColor"))
+                        .foregroundColor(isFeatured ? .white : Color("TitleColor"))
                     HStack {
                         Text("$")
                             .font(.largeTitle.bold())
-                            .foregroundColor(Color("PriceColor"))
+                            .foregroundColor(isFeatured ? .white : Color("PriceColor"))
                         Text(price,  format: .number)
                             .kerning(-3)
                             .font(.system(size: 64, weight: .bold))
-                            .foregroundColor(Color("PriceColor"))
+                            .foregroundColor(isFeatured ? .white : Color("PriceColor"))
                     }
                 }
                 Divider()
-                    .background(Color("BodyColor"))
+                    .background(isFeatured ? Color.white : Color("BodyColor"))
                 Text("\(plan.storageLabel) Storage")
                     .font(.title3)
                     .fontWeight(.semibold)
-                    .foregroundColor(Color("TitleColor"))
+                    .foregroundColor(isFeatured ? .white : Color("TitleColor"))
                     .padding(.vertical)
                 Divider()
-                    .background(Color("BodyColor"))
+                    .background(isFeatured ? Color.white : Color("BodyColor"))
                 Text("\(plan.maxNumOfUsers) Users Allowed")
                     .font(.title3)
                     .fontWeight(.semibold)
-                    .foregroundColor(Color("TitleColor"))
+                    .foregroundColor(isFeatured ? .white : Color("TitleColor"))
                     .padding(.vertical)
                 Divider()
-                    .background(Color("BodyColor"))
+                    .background(isFeatured ? Color.white : Color("BodyColor"))
                 Text("Send up to \(plan.sendAllowance) GB")
                     .font(.title3)
                     .fontWeight(.semibold)
-                    .foregroundColor(Color("TitleColor"))
+                    .foregroundColor(isFeatured ? .white : Color("TitleColor"))
                     .padding(.vertical)
                 Divider()
-                    .background(Color("BodyColor"))
+                    .background(isFeatured ? Color.white : Color("BodyColor"))
                 Button {
                     // TODO: LEARN MORE.
                 } label: {
                     ZStack {
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(LinearGradient(colors: [.init("LeadingGradientColor"), .init("TrailingGradientColor")], startPoint: .leading, endPoint: .trailing))
+                        if isFeatured {
+                            Color.white
+                        } else {
+                            LinearGradient(colors: [.init("LeadingGradientColor"), .init("TrailingGradientColor")], startPoint: .leading, endPoint: .trailing)
+                        }
                         Text("LEARN MORE")
                             .kerning(3)
                             .font(.title3.bold())
-                            .foregroundColor(.white)
+                            .foregroundColor(isFeatured ? .init("TrailingGradientColor") : .white)
                             .padding()
                     }
+                    .cornerRadius(10)
                     .padding(.top)
                 }
             }
